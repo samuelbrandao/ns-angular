@@ -1,0 +1,40 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var nativescript_module_1 = require("nativescript-angular/nativescript.module");
+var forms_1 = require("nativescript-angular/forms");
+var app_component_1 = require("./app.component");
+var current_challenge_component_1 = require("./challenges/current-challenge/current-challenge.component");
+var stack_component_1 = require("./layouts/stack/stack.component");
+var flexbox_component_1 = require("./layouts/flexbox/flexbox.component");
+var flexbox_assignment_component_1 = require("./assignments/flexbox-assignment/flexbox-assignment.component");
+var grid_component_1 = require("./layouts/grid/grid.component");
+var grid_assignment_component_1 = require("./assignments/grid-assignment/grid-assignment.component");
+var absolute_component_1 = require("./layouts/absolute/absolute.component");
+var challenge_edit_component_1 = require("./challenges/challenge-edit/challenge-edit.component");
+// Uncomment and add to NgModule imports if you need to use two-way binding
+// import { NativeScriptFormsModule } from "nativescript-angular/forms";
+// Uncomment and add to NgModule imports if you need to use the HttpClient wrapper
+// import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
+var AppModule = /** @class */ (function () {
+    /*
+    Pass your application module to the bootstrapModule function located in main.ts to start your app
+    */
+    function AppModule() {
+    }
+    AppModule = __decorate([
+        core_1.NgModule({
+            bootstrap: [app_component_1.AppComponent],
+            imports: [nativescript_module_1.NativeScriptModule, forms_1.NativeScriptFormsModule],
+            declarations: [app_component_1.AppComponent, current_challenge_component_1.CurrentChallengeComponent, stack_component_1.StackComponent, flexbox_component_1.FlexboxComponent, flexbox_assignment_component_1.FlexboxAssignmentComponent, grid_component_1.GridComponent, grid_assignment_component_1.GridAssignmentComponent, absolute_component_1.AbsoluteComponent, challenge_edit_component_1.ChallengeEditComponent],
+            providers: [],
+            schemas: [core_1.NO_ERRORS_SCHEMA]
+        })
+        /*
+        Pass your application module to the bootstrapModule function located in main.ts to start your app
+        */
+    ], AppModule);
+    return AppModule;
+}());
+exports.AppModule = AppModule;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYXBwLm1vZHVsZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbImFwcC5tb2R1bGUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxzQ0FBMkQ7QUFDM0QsZ0ZBQThFO0FBQzlFLG9EQUFxRTtBQUVyRSxpREFBK0M7QUFDL0MsMEdBQXVHO0FBQ3ZHLG1FQUFpRTtBQUNqRSx5RUFBdUU7QUFDdkUsOEdBQTJHO0FBQzNHLGdFQUE4RDtBQUM5RCxxR0FBa0c7QUFDbEcsNEVBQTBFO0FBQzFFLGlHQUE4RjtBQUU5RiwyRUFBMkU7QUFDM0Usd0VBQXdFO0FBRXhFLGtGQUFrRjtBQUNsRixtRkFBbUY7QUFZbkY7SUFIQTs7TUFFRTtJQUNGO0lBQXdCLENBQUM7SUFBWixTQUFTO1FBVnJCLGVBQVEsQ0FBQztZQUNSLFNBQVMsRUFBRSxDQUFDLDRCQUFZLENBQUM7WUFDekIsT0FBTyxFQUFFLENBQUMsd0NBQWtCLEVBQUUsK0JBQXVCLENBQUM7WUFDdEQsWUFBWSxFQUFFLENBQUMsNEJBQVksRUFBRSx1REFBeUIsRUFBRSxnQ0FBYyxFQUFFLG9DQUFnQixFQUFFLHlEQUEwQixFQUFFLDhCQUFhLEVBQUUsbURBQXVCLEVBQUUsc0NBQWlCLEVBQUUsaURBQXNCLENBQUM7WUFDeE0sU0FBUyxFQUFFLEVBQUU7WUFDYixPQUFPLEVBQUUsQ0FBQyx1QkFBZ0IsQ0FBQztTQUM1QixDQUFDO1FBQ0Y7O1VBRUU7T0FDVyxTQUFTLENBQUc7SUFBRCxnQkFBQztDQUFBLEFBQXpCLElBQXlCO0FBQVosOEJBQVMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBOZ01vZHVsZSwgTk9fRVJST1JTX1NDSEVNQSB9IGZyb20gJ0Bhbmd1bGFyL2NvcmUnO1xuaW1wb3J0IHsgTmF0aXZlU2NyaXB0TW9kdWxlIH0gZnJvbSAnbmF0aXZlc2NyaXB0LWFuZ3VsYXIvbmF0aXZlc2NyaXB0Lm1vZHVsZSc7XG5pbXBvcnQgeyBOYXRpdmVTY3JpcHRGb3Jtc01vZHVsZSB9IGZyb20gJ25hdGl2ZXNjcmlwdC1hbmd1bGFyL2Zvcm1zJztcblxuaW1wb3J0IHsgQXBwQ29tcG9uZW50IH0gZnJvbSAnLi9hcHAuY29tcG9uZW50JztcbmltcG9ydCB7IEN1cnJlbnRDaGFsbGVuZ2VDb21wb25lbnQgfSBmcm9tICcuL2NoYWxsZW5nZXMvY3VycmVudC1jaGFsbGVuZ2UvY3VycmVudC1jaGFsbGVuZ2UuY29tcG9uZW50JztcbmltcG9ydCB7IFN0YWNrQ29tcG9uZW50IH0gZnJvbSAnLi9sYXlvdXRzL3N0YWNrL3N0YWNrLmNvbXBvbmVudCc7XG5pbXBvcnQgeyBGbGV4Ym94Q29tcG9uZW50IH0gZnJvbSAnLi9sYXlvdXRzL2ZsZXhib3gvZmxleGJveC5jb21wb25lbnQnO1xuaW1wb3J0IHsgRmxleGJveEFzc2lnbm1lbnRDb21wb25lbnQgfSBmcm9tICcuL2Fzc2lnbm1lbnRzL2ZsZXhib3gtYXNzaWdubWVudC9mbGV4Ym94LWFzc2lnbm1lbnQuY29tcG9uZW50JztcbmltcG9ydCB7IEdyaWRDb21wb25lbnQgfSBmcm9tICcuL2xheW91dHMvZ3JpZC9ncmlkLmNvbXBvbmVudCc7XG5pbXBvcnQgeyBHcmlkQXNzaWdubWVudENvbXBvbmVudCB9IGZyb20gJy4vYXNzaWdubWVudHMvZ3JpZC1hc3NpZ25tZW50L2dyaWQtYXNzaWdubWVudC5jb21wb25lbnQnO1xuaW1wb3J0IHsgQWJzb2x1dGVDb21wb25lbnQgfSBmcm9tICcuL2xheW91dHMvYWJzb2x1dGUvYWJzb2x1dGUuY29tcG9uZW50JztcbmltcG9ydCB7IENoYWxsZW5nZUVkaXRDb21wb25lbnQgfSBmcm9tICcuL2NoYWxsZW5nZXMvY2hhbGxlbmdlLWVkaXQvY2hhbGxlbmdlLWVkaXQuY29tcG9uZW50JztcblxuLy8gVW5jb21tZW50IGFuZCBhZGQgdG8gTmdNb2R1bGUgaW1wb3J0cyBpZiB5b3UgbmVlZCB0byB1c2UgdHdvLXdheSBiaW5kaW5nXG4vLyBpbXBvcnQgeyBOYXRpdmVTY3JpcHRGb3Jtc01vZHVsZSB9IGZyb20gXCJuYXRpdmVzY3JpcHQtYW5ndWxhci9mb3Jtc1wiO1xuXG4vLyBVbmNvbW1lbnQgYW5kIGFkZCB0byBOZ01vZHVsZSBpbXBvcnRzIGlmIHlvdSBuZWVkIHRvIHVzZSB0aGUgSHR0cENsaWVudCB3cmFwcGVyXG4vLyBpbXBvcnQgeyBOYXRpdmVTY3JpcHRIdHRwQ2xpZW50TW9kdWxlIH0gZnJvbSBcIm5hdGl2ZXNjcmlwdC1hbmd1bGFyL2h0dHAtY2xpZW50XCI7XG5cbkBOZ01vZHVsZSh7XG4gIGJvb3RzdHJhcDogW0FwcENvbXBvbmVudF0sXG4gIGltcG9ydHM6IFtOYXRpdmVTY3JpcHRNb2R1bGUsIE5hdGl2ZVNjcmlwdEZvcm1zTW9kdWxlXSxcbiAgZGVjbGFyYXRpb25zOiBbQXBwQ29tcG9uZW50LCBDdXJyZW50Q2hhbGxlbmdlQ29tcG9uZW50LCBTdGFja0NvbXBvbmVudCwgRmxleGJveENvbXBvbmVudCwgRmxleGJveEFzc2lnbm1lbnRDb21wb25lbnQsIEdyaWRDb21wb25lbnQsIEdyaWRBc3NpZ25tZW50Q29tcG9uZW50LCBBYnNvbHV0ZUNvbXBvbmVudCwgQ2hhbGxlbmdlRWRpdENvbXBvbmVudF0sXG4gIHByb3ZpZGVyczogW10sXG4gIHNjaGVtYXM6IFtOT19FUlJPUlNfU0NIRU1BXVxufSlcbi8qXG5QYXNzIHlvdXIgYXBwbGljYXRpb24gbW9kdWxlIHRvIHRoZSBib290c3RyYXBNb2R1bGUgZnVuY3Rpb24gbG9jYXRlZCBpbiBtYWluLnRzIHRvIHN0YXJ0IHlvdXIgYXBwXG4qL1xuZXhwb3J0IGNsYXNzIEFwcE1vZHVsZSB7fVxuIl19
