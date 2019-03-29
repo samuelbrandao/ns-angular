@@ -17,7 +17,9 @@ const routes: Routes = [
     children: [
       { path: 'today', component: TodayComponent, outlet: 'today' },
       {
-        path: 'current-challenge', component: CurrentChallengeComponent, outlet: 'currentChallenge'
+        path: 'current-challenge',
+        component: CurrentChallengeComponent,
+        outlet: 'currentChallenge'
       }
     ]
   }
