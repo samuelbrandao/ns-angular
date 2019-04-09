@@ -4,13 +4,14 @@ import { Component, OnInit } from '@angular/core';
   selector: 'ns-today',
   templateUrl: './today.component.html',
   styleUrls: ['./today.component.scss'],
-  moduleId: module.id,
+  moduleId: module.id
 })
 export class TodayComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
+  onActionSelected(action: 'complete' | 'fail' | 'cancel') {
+    console.log(action);
   }
-
 }
