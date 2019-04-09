@@ -3,7 +3,9 @@
   [showBackButton]="false"
 ></ns-action-bar>
 
-<ns-challenge-actions
-  (actionSelect)="onActionSelected($event)"
-  cancelText="Reset"
-></ns-challenge-actions>
+<GridLayout>
+  <ns-challenge-actions
+    (actionSelect)="onActionSelected($event)"
+    cancelText="Reset"
+  ></ns-challenge-actions>
+</GridLayout>
